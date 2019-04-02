@@ -1,13 +1,17 @@
 ﻿using System;
+using Burgers.Project;
 
-namespace BurgerShop
+namespace Burgers
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
       Console.Clear();
-      Console.WriteLine("Hello World!");
-        }
+      Console.WriteLine("Thanks for choosing Burger Shack.\nPress any key to view the menu.");
+      Console.ReadKey();
+      App app = new App();
+      app.Start();
     }
+  }
 }
